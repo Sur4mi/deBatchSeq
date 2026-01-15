@@ -5,7 +5,7 @@ import pandas as pd
 import numpy as np
 
 # Load raw read counts csv file
-counts = pd.read_csv("prova.csv", index_col=0, sep=None, engine='python')
+counts = pd.read_csv("raw_counts.csv", index_col=0, sep=None, engine='python')
 
 # Calculate library size per sample (total reads per sample)
 library_sizes = counts.sum(axis=0)
